@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Desperdício Zero!</title>
+</head>
+<body>
+    <header style="background-image: url('./Design\ sem\ nome.jpg')">
+        <div class="container">
+            <nav>
+                <a href="#home">
+                    <img src="./logo.png" alt="logo" width="40%" height="20%"></a>
+                <ul class="ul">
+                    <div class="button"></div>
+                    <button><a href="#home">Home</a></button>
+                    <button><a href="#como_ajudar">Ajudar</a></button>
+                    <button><a href="#sobre">Sobre</a></button>
+                    <button><a href="#contato.html">Contato</a></button>
+                </ul>
+            </nav>
+            <section class="banner" id="home">
+                <div class="banner-text">
+                    <h1>DOAÇÃO DE MEDICAMENTOS</h1>
+                    <p><h2><span>CASO QUEIRA FAZER PARTE DO GRUPO DE BENEFICIÁRIOS DE DOAÇÕES, CADASTRE-SE NO LINK ABAIXO!</span></h2></p>
+                    <br>
+                    <a href="contato.html" class="btn">Saiba Mais</a>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- Seção Solidariedade (Ajuda) -->
+    <section class="ajuda" id="como_ajudar">
+        <div class="container">
+            <div id="ajuda-enchente-text">
+                <h3>SOLIDARIEDADE</h3>
+                <br>
+                <p id="text">Contribua para fortalecer o banco de doações de medicamentos, destinados a ONGs, abrigos de animais, lares temporários, hospitais e clínicas populares. Sua ajuda faz a diferença! Ao doar medicamentos veterinários, você contribui diretamente para salvar vidas, promovendo tratamentos de qualidade e cuidados adequados para animais em situação de vulnerabilidade.Ao participar desse movimento, você não apenas ajuda a reduzir o desperdício de medicamentos, mas também fortalece a rede de apoio que transforma a vida desses animais.</p>
+                <br><br>
+                <a href=".html" class="btn animate-btn">Como Ajudar</a>
+            </div>
+            <div class="ajuda-enchente-img">
+                <img src="./depositphotos_544283242-stock-photo-man-holding-hand-pill-ill.jpg" alt="Como Ajudar" width="-30%" height="-20%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-text">
+                <h3>SOBRE NÓS</h3>
+                <p>O Projeto "Desperdício Zero" tem como missão proporcionar a populações carentes a oportunidade de um tratamento de qualidade para os animais. Buscamos combater o desperdício de medicamentos veterinários, diminuindo os resíduos no ambiente e ajudando a reduzir os custos com medicamentos para ONGs, lares temporários e canis municipais. Além disso, nosso objetivo é facilitar o processo de doação de medicamentos, tornando mais simples e acessível para todos aqueles que desejam contribuir com essa causa tão importante.</p>
+                <a href="contato.html" class="btn animate-btn">Contato</a>
+            </div>
+            <div class="sobre-img">
+                <img src="./logo.png" alt="Imagem Desperdício Zero" width="0%" height="0%">
+            </div>
+        </div>
+    </section>
+    <!-- Seção de Doação de Medicamentos (Novo formulário com validade e clínicas veterinárias) -->
+<section class="formulario-doacao-completa">
+    <div class="form-container-completa">
+        <div id="ajuda">
+        <h2>Formulário de Doação de Medicamentos</h2>
+        <p>Contribua para o tratamento de animais carentes! Preencha o formulário abaixo para realizar sua doação de medicamentos.</p>
+        
+        <!-- Formulário de Doação -->
+        <form action="#" method="POST" class="form-doacao-completa" enctype="multipart/form-data">
+            <div class="form-item-completa">
+                <label for="nome-doador">Nome Completo:</label>
+                <input type="text" id="nome-doador" name="nome-doador" placeholder="Seu nome completo" required>
+            </div>
+            
+            <div class="form-item-completa">
+                <label for="email-doador">E-mail:</label>
+                <input type="email" id="email-doador" name="email-doador" placeholder="Seu e-mail" required>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="telefone-doador">Telefone:</label>
+                <input type="tel" id="telefone-doador" name="telefone-doador" placeholder="Seu telefone" required>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="tipo-medicamento">Tipo de Medicamento:</label>
+                <select id="tipo-medicamento" name="tipo-medicamento" required>
+                    <option value="antibiotico">Antibiótico</option>
+                    <option value="antiinflamatorio">Anti-inflamatório</option>
+                    <option value="analgesico">Analgésico</option>
+                    <option value="vermifugo">Vermífugo</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="quantidade">Quantidade de Medicamento:</label>
+                <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade do medicamento" required>
+            </div>
+
+            <!-- Novos Campos: Cidade, Estado, Foto do Medicamento e Validade -->
+            <div class="form-item-completa">
+                <label for="cidade-doador">Cidade:</label>
+                <input type="text" id="cidade-doador" name="cidade-doador" placeholder="Sua cidade" required>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="estado-doador">Estado:</label>
+                <select id="estado-doador" name="estado-doador" required onchange="exibirClinicas()">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="foto-medicamento-doador">Foto do Medicamento:</label>
+                <input type="file" id="foto-medicamento-doador" name="foto-medicamento-doador" accept="image/*" required>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="validade-medicamento">Validade do Medicamento:</label>
+                <input type="date" id="validade-medicamento" name="validade-medicamento" required>
+            </div>
+
+            <div class="form-item-completa">
+                <label for="observacoes-doador">Observações (opcional):</label>
+                <textarea id="observacoes-doador" name="observacoes-doador" placeholder="Observações adicionais"></textarea>
+            </div>
+
+            <!-- Seção de Clínicas Veterinárias -->
+            <div id="clinicas-veterinarias" class="form-item-completa">
+                <label for="clinicas">Clínicas Veterinárias Parceiras:</label>
+                <select id="clinicas" name="clinicas" disabled>
+                    <option value="">Selecione o estado e a cidade</option>
+                </select>
+            </div>
+
+            <div class="form-item-completa">
+                <button type="submit" class="btn-completa">Enviar Doação</button>
+            </div>
+        </form>
+    </div>
+</div>
+</section>
+<section id="rastreamento" class="rastreamento">
+    <div class="container">
+        <h2>Rastreie Seu Medicamento</h2>
+        <p>Digite o código de rastreamento para saber onde seu medicamento está.</p>
+
+        <!-- Formulário de Rastreamento -->
+        <div class="form-container">
+            <input type="text" id="codigo-rastreio" placeholder="Digite o código de rastreio" />
+            <button onclick="rastrear()">Rastrear</button>
+        </div>
+
+        <!-- Resultado do Rastreamento -->
+        <div id="resultado" class="resultado hidden">
+            <h3>Status da Entrega</h3>
+            <div id="status-rastreio"></div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <p>InovaWeb © 2024. Todos os direitos reservados - Inteligência Digital</p>      
+        </div>
+    </footer>
+</body>
+</html>

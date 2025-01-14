@@ -1,0 +1,546 @@
+/* Reseta margens, preenchimentos e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Configurações para o HTML */
+body {
+    background-color: #FFD713;
+    background-image: url('../assets/CANIL-3-scaled.jpg');
+}
+
+/* Header */
+header {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Navegação */
+nav {
+    top: 20px;
+    right: 20px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2px;
+}
+
+nav button {
+    margin: 5px;
+    background-color: #ffd503a6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+    margin: 0 40px;
+}
+
+nav ul a {
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: 0 2px;
+    transition: transparent;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+}
+nav img{
+    padding: 20px;
+}
+
+/* Banner */
+.banner {
+    
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    background-image: url('./CANIL-3-scaled.jpg');
+}
+
+.banner .banner-text {
+    margin: 15px;
+    text-align: center;
+    padding: 0;
+}
+
+.banner .banner-text h1 {
+    font-size: 96px;
+    color: rgb(255, 208, 0);
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: #000000;
+    margin: 18px 0;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+/* Botões */
+.btn {
+    background-color: rgb(255, 208, 0);
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+span{
+    background-color: #f8f8f8;
+    display: inline-block;   /* Garante que o texto ocupe apenas uma linha */
+    background-color: #fcf3f3;
+    padding: 10px;
+    margin: 20px 0;
+    white-space: nowrap;     /* Impede quebra de linha */
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    text-overflow: ellipsis; /* Exibe "..." se o texto ultrapassar o limite */
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: #e6880e;
+}
+
+/* Textos */
+h3 {
+    font-size: 30px;
+    margin: 20px 80px 0 -10px;
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6; 
+}
+
+h2 {
+    font-size: 28px;
+    color: #000000;
+    
+    line-height: 1.6;
+}
+p #text{
+    font-size: 25px;
+    color: #000000;                    /* Cor suave para o texto */
+    line-height: 1.6;  
+    margin: 50px;
+    
+    
+}
+
+/* Ajuda */
+.ajuda .container {
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.ajuda #ajuda-enchente-text {
+    width: 50%;
+    padding: 0 40px;
+    margin-top: 50px;
+    color: #000000;
+}
+
+.ajuda .ajuda-enchente-text h3 {
+    font-size: 56px;
+}
+
+.ajuda .ajuda-enchente-img img {
+    width: 110%;
+    height: 70%;
+    border-radius: 5%;
+    margin: 120px -11px;
+}
+
+/* Footer */
+.footer {
+    background-color: #00000000;
+    text-align: center;
+}
+
+.footer p {
+    margin: 20px 0;
+    color: #00000085;
+}
+
+hr {
+    color: #000000;
+    opacity: 50%;
+}
+/* Seção Sobre */
+.sobre {
+    display: flex;                 /* Flexbox para alinhar os itens lado a lado */
+    align-items: center;           /* Alinha os itens no centro verticalmente */
+    justify-content: center;       /* Centraliza os itens horizontalmente */
+    padding: 60px 20px;            /* Espaçamento interno para dar respiro */
+    background-color: #f8f8f8;     /* Cor de fundo suave para a seção */
+    border-radius: 10px;           /* Adiciona bordas arredondadas para um efeito mais suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave para destacar a seção */
+}
+
+.sobre .container {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre o texto e a imagem */
+    align-items: center;            /* Alinha o conteúdo verticalmente */
+    width: 100%;                    /* Largura total */
+    max-width: 1200px;              /* Limita o tamanho máximo do container */
+    padding: 0 20px;                /* Espaçamento nas laterais */
+}
+
+.sobre-text {
+    width: 50%;                     /* O texto ocupa 50% da largura */
+    padding-right: 20px;            /* Espaçamento entre o texto e a imagem */
+    box-sizing: border-box;         /* Garantir que o padding não ultrapasse a largura */
+}
+
+.sobre-img {
+    width: 40%;                     /* A imagem ocupa 40% da largura */
+}
+
+.sobre-img img {
+    width: 100%;                    /* Faz a imagem ocupar toda a largura do seu contêiner */
+    height: auto;                   /* Mantém a proporção da imagem */
+    border-radius: 8px;             /* Adiciona borda arredondada à imagem */
+}
+
+/* Estilo para o título e o parágrafo */
+.sobre h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;                    /* Cor escura para o título */
+}
+
+.sobre p {
+    font-size: 18px;
+    color: #666;                    /* Cor suave para o texto */
+    line-height: 1.6;               /* Melhora o espaçamento entre as linhas */
+}
+
+/* Botão */
+.sobre .btn {
+    margin-top: 20px;
+}
+/* Estilo para o novo formulário de doação de medicamentos */
+/* Estilo para o novo formulário de doação de medicamentos */
+.formulario-doacao-completa {
+    background-image: url('../Ufape-Hospital-Veterinario-tutor-dando-um-vermifugo-para-caes-para-seu-cachorro-GS2-MKT-Freepik.jpg');
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.form-container-completa {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff57;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.form-doacao-completa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos campos do formulário */
+.form-item-completa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-item-completa label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-item-completa input,
+.form-item-completa select,
+.form-item-completa textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-item-completa input[type="file"] {
+    padding: 5px;
+}
+
+.form-item-completa select {
+    padding: 12px;
+}
+
+.form-item-completa textarea {
+    height: 120px;
+}
+
+.form-item-completa button {
+    background-color: #FFD713;
+    color: #333;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.form-item-completa button:hover {
+    background-color: #e6880e;
+}
+
+/* Seção de Clínicas Veterinárias */
+#clinicas-veterinarias select {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+}
+/* Seção Rastreamento */
+.rastreamento {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da Seção */
+.rastreamento h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Descrição */
+.rastreamento p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Formulário de rastreamento */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.form-container input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #FFD713;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #e6880e;
+}
+
+/* Resultado do Rastreamento */
+.resultado {
+    margin-top: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Caixa do Resultado de Rastreio (Tipo Cartão) */
+.resultado div {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-left: 5px solid #FFD713;  /* Borda lateral amarela para destaque */
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    gap: 20px;  /* Espaçamento entre a imagem e o texto */
+}
+
+/* Adiciona a imagem do pacote */
+.resultado .package-icon {
+    width: 50px;  /* Tamanho da imagem */
+    height: 50px;
+    background-image: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/svgs/solid/box.svg');
+    background-position: center;
+}
+
+/* Resultado com Status */
+.resultado .status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Detalhes do Rastreio */
+.resultado .details {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Ocultar resultado */
+.resultado.hidden {
+    display: none;
+}
+/* Caixa para a seção de Contato */
+.contato {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+/* Caixa de Contato com fundo branco e sombra */
+.contato-caixa {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+.form-container {
+    margin-bottom: 40px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-item label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-item button {
+    width: 100%;
+    background-color: #FFD713;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-item button:hover {
+    background-color: #e6880e;
+}
+
+/* Caixa para ícones das Redes Sociais */
+.social-box {
+    margin-top: 30px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 20px;
+    font-size: 40px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Facebook */
+.social-icons .facebook {
+    color: #1877f2; /* Cor do Facebook */
+}
+
+.social-icons .facebook:hover {
+    color: #0d5db9; /* Cor ao passar o mouse */
+}
+
+/* WhatsApp */
+.social-icons .whatsapp {
+    color: #25d366; /* Cor do WhatsApp */
+}
+
+.social-icons .whatsapp:hover {
+    color: #128c7e; /* Cor ao passar o mouse */
+}
+
+/* Email */
+.social-icons .email {
+    color: #ff5b5b; /* Cor para o ícone de email */
+}
+
+.social-icons .email:hover {
+    color: #d90000; /* Cor ao passar o mouse */
+}
+
+
+
